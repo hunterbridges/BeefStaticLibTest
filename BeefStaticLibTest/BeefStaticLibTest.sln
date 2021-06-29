@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BeefLibrary", "BeefLibrary\BeefLibrary.vcxproj", "{ACBFE707-5AD8-4B64-932B-976F64A965AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApp", "ConsoleApp\ConsoleApp.vcxproj", "{7D2FF763-C1EA-49FD-85E0-8342054E3856}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBFE707-5AD8-4B64-932B-976F64A965AB}.Debug|x64.ActiveCfg = Debug|x64
+		{ACBFE707-5AD8-4B64-932B-976F64A965AB}.Debug|x64.Build.0 = Debug|x64
+		{ACBFE707-5AD8-4B64-932B-976F64A965AB}.Release|x64.ActiveCfg = Release|x64
+		{ACBFE707-5AD8-4B64-932B-976F64A965AB}.Release|x64.Build.0 = Release|x64
+		{7D2FF763-C1EA-49FD-85E0-8342054E3856}.Debug|x64.ActiveCfg = Debug|x64
+		{7D2FF763-C1EA-49FD-85E0-8342054E3856}.Debug|x64.Build.0 = Debug|x64
+		{7D2FF763-C1EA-49FD-85E0-8342054E3856}.Release|x64.ActiveCfg = Release|x64
+		{7D2FF763-C1EA-49FD-85E0-8342054E3856}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F28E012-95CB-4EFA-8093-9E6CF34890F9}
+	EndGlobalSection
+EndGlobal

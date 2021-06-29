@@ -26,6 +26,8 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
+build/
+recovery/
 [Bb]in/
 [Oo]bj/
 [Ll]og/

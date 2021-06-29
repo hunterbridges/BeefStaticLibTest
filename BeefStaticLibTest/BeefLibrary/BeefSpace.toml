@@ -1,0 +1,51 @@
+FileVersion = 1
+Projects = {BeefLibrary = {Path = "."}}
+
+[Workspace]
+StartupProject = "BeefLibrary"
+
+[[Workspace.DistinctOptions]]
+Filter = ""
+ReflectAlwaysInclude = "IncludeAll"
+
+[Configs.Debug.Win64]
+AllocType = "CRT"
+RuntimeChecks = false
+EmitDynamicCastCheck = false
+EnableObjectDebugFlags = false
+EmitObjectAccessCheck = false
+EnableRealtimeLeakCheck = false
+AllowHotSwapping = false
+
+[[Configs.Debug.Win64.DistinctOptions]]
+Filter = ""
+
+[[Configs.Debug.Win64.DistinctOptions]]
+Filter = ""
+
+[[Configs.Release.Win64.DistinctOptions]]
+Filter = ""
+
+[Configs.Paranoid.Win64]
+AllocType = "CRT"
+RuntimeChecks = false
+EmitDynamicCastCheck = false
+EnableObjectDebugFlags = false
+EmitObjectAccessCheck = false
+EnableRealtimeLeakCheck = false
+AllowHotSwapping = false
+
+[[Configs.Paranoid.Win64.DistinctOptions]]
+Filter = ""
+
+[Configs.Test.Win64]
+AllocType = "CRT"
+RuntimeChecks = false
+EmitDynamicCastCheck = false
+EnableObjectDebugFlags = false
+EmitObjectAccessCheck = false
+EnableRealtimeLeakCheck = false
+AllowHotSwapping = false
+
+[[Configs.Test.Win64.DistinctOptions]]
+Filter = ""
