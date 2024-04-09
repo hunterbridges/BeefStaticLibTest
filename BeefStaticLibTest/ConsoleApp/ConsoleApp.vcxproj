@@ -94,7 +94,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.obj;C:\Program Files\BeefLang\bin\Beef042RT64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,7 +111,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.lib;C:\Program Files\BeefLang\bin\Beef042RT64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,7 +124,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.lib;Beef042RT64_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,18 +141,23 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\*.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\*.lib;Beef042RT64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Submodules\Beef\BeefRT\BeefRT.vcxproj">
+      <Project>{5be0b958-c13b-4986-a588-97a8f707e42e}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\BeefLibrary\BeefLibrary.vcxproj">
       <Project>{acbfe707-5ad8-4b64-932b-976f64a965ab}</Project>
       <Private>false</Private>
-      <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BeefLibrary.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
