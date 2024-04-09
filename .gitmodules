@@ -1,0 +1,3 @@
+[submodule "Submodules/Beef"]
+	path = Submodules/Beef
+	url = https://github.com/beefytech/Beef.git
