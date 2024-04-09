@@ -5,6 +5,7 @@
 
 # Beef
 BeefSpace_User.toml
+dist/
 
 # User-specific files
 *.rsuser
