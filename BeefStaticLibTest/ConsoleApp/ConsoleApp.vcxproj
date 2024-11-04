@@ -124,7 +124,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,7 +140,6 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\BeefLibrary__.lib;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\BeefLibrary\vdata.obj;$(SolutionDir)BeefLibrary\build\$(Configuration)_Win64\corlib\corlib__.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
